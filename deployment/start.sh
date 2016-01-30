@@ -1,4 +1,2 @@
 #!/bin/sh
-cd
-export NODE_ENV=$DEPLOYMENT_GROUP_NAME
-DEBUG=* forever -l /var/log/vio/vio-graph.log start --uid "vio-graph" -a /opt/vio/vio-graph/src/app.js
+docker run --name hello-world -p 80:8080 -d larsen/hello-world

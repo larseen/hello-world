@@ -3,3 +3,18 @@ os: linux
 files:
   - source: /
     destination: /opt/hello-world/
+hooks:
+  BeforeInstall:
+    - location: deployment/stop.sh
+      timeout: 10
+      runas: root
+
+  AfterInstall:
+    - location: deployment/setup.sh
+      timeout: 200
+      runas: root
+
+  ApplicationStart:
+    - location: deployment/start.sh
+      timeout: 10
+      runas: root

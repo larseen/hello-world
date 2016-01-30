@@ -1,4 +1,2 @@
 #!/bin/sh
-mkdir -p /var/log/vio/
-cd /opt/vio/vio-graph/
-npm install
+docker build -t larsen/hello-world /opt/hello-world/
