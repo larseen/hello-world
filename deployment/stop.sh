@@ -1,2 +1,2 @@
 #!/bin/sh
-docker kill hello-world
+docker stop $(docker ps -a -q)
