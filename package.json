@@ -1,0 +1,28 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "A hello world application with docker and aws",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/larseen/hello-world.git"
+  },
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "author": "Kristoffer Larsen <kristoffer@larsen.so>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larseen/hello-world/issues"
+  },
+  "homepage": "https://github.com/larseen/hello-world#readme",
+  "dependencies": {
+    "babel-cli": "^6.4.5",
+    "express": "^4.13.4"
+  }
+}
