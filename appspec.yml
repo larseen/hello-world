@@ -6,7 +6,7 @@ files:
 hooks:
   BeforeInstall:
     - location: deployment/stop.sh
-      timeout: 10
+      timeout: 20
       runas: root
 
   AfterInstall:
@@ -16,5 +16,5 @@ hooks:
 
   ApplicationStart:
     - location: deployment/start.sh
-      timeout: 10
+      timeout: 20
       runas: root
